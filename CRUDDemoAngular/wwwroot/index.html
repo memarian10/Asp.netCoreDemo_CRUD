@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="lib/bootstrap-4.2.1-dist/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container" ng-app="categoryModulezzzzz" ng-controller="categoryControllerzzzz">
+        <br/>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th></th >
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="cat in categoriess">
+                    <td>{{cat.name}}</td>
+                    <td>
+                        <button class="btn btn-danger" ng-click="deleteCategory(cat.categoryID)">Delete</button> 
+                        <!--بنابراین باید در کنترلر این  تابع را معرفی کنیم-->
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="lib/angular.js/angular.min.js"></script>
+    <script src="categoryModule.js"></script>
+    
+</body>
+</html>
